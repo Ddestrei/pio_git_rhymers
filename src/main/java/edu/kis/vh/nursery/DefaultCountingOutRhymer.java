@@ -8,7 +8,7 @@ public class DefaultCountingOutRhymer {
 
     private static final int BLAD = -1;
 
-    public int total = -1;
+    private int total = -1;
 
     public int getTotal() {
         return total;
@@ -39,4 +39,7 @@ public class DefaultCountingOutRhymer {
         return NUMBERS[total--];
     }
 
+    public void setTotal(int total) {
+        this.total = total;
+    }
 }
