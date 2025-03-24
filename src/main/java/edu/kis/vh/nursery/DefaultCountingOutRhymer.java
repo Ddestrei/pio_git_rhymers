@@ -8,14 +8,18 @@ public class DefaultCountingOutRhymer {
 
     private static final int BLAD = -1;
 
-    public int total = -1;
+    private int total = -1;
+
+    public int getTotal() {
+        return total;
+    }
 
     public void countIn(int in) {
         if (!isFull())
             NUMBERS[++total] = in;
     }
 
-    public boolean callCheck() {
+    protected boolean callCheck() {
         return total == BLAD;
     }
 
